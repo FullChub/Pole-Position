@@ -1,0 +1,50 @@
+Pole Position Privacy Policy
+Last updated: 10 October 2026
+
+Pole Position is developed by David Leonardi. This policy explains how the app handles information when you play, use Game Center, enter a competition or share play activity.
+
+Information on your device
+
+Pole Position stores gameplay results, performance history, preferences, coaching history and secret achievement progress on your device. Solo gameplay does not require Game Center. The online features described below send only the information needed for those features; your complete local performance and coaching history is not uploaded to the developer's services.
+
+Game Center and achievements
+
+If you sign in to Apple's Game Center, Pole Position uses it to submit scores, display rankings and player profiles, and report and retrieve earned achievements. Your Game Center name, profile and scores may be visible to other players according to Apple's services and your Game Center settings. Achievement synchronisation is associated with the Game Center account that is signed in. Apple handles Game Center information under its own privacy terms: https://www.apple.com/legal/privacy/.
+
+Challenge Mode competitions
+
+Private competitions use a developer-operated service hosted on Cloudflare. Game Center verifies your identity; Pole Position does not receive your Apple Account password. The app sends a Game Center player identifier, display name and Apple-signed identity proof to the competition service. The service stores a stable hash of the player identifier, your display name, and authentication session and proof hashes. The hashed identifier still links competition activity to the same player; it is not anonymous data.
+
+The service stores competition participants, invitation codes, game mode, attempts, submitted scores, results and relevant timestamps. This information supports invitations, attempt limits, deadlines, score recovery and deciding the winner. Your display name, best score, attempt count and competition outcome are visible to the other participant. Share invitation links and codes only with the person you want to join.
+
+Competition records and their attempts become eligible for scheduled deletion 90 days after the competition was created. Authentication sessions expire after seven days; expired sessions and identity-proof records are removed by scheduled cleanup. Player identifier and display-name records do not currently expire automatically and remain until explicitly removed. Scheduled cleanup runs in bounded batches, so deletion may occur after a record first becomes eligible.
+
+Share Play Activity
+
+Pole Position can send limited solo-play activity to a separate Cloudflare-hosted analytics service, used by the developer to understand how many app installations are playing and which games are being used. Share Play Activity is enabled by default and can be turned off in Settings → Privacy.
+
+Activity includes a randomly generated installation identifier, a session identifier, game mode, activity dates and times, whether the app was recently playing or idle, and counts of started and completed solo runs. The service hashes the installation identifier before storing it. These records remain linked to that installation. They do not include your name, Game Center identifier, individual reaction times or shift scores, advertising identifier, or Challenge Mode activity. Both private competitions and native Game Center challenges are excluded.
+
+Activity records become eligible for scheduled cleanup after 30 days. The developer's private dashboard shows aggregated activity counts and recent-play estimates. Turning Share Play Activity off stops further collection, clears queued local activity and resets the local analytics identifier. It does not immediately delete records already received by the service; those records follow the retention period above.
+
+Hosting, advertising and tracking
+
+Cloudflare provides hosting, storage and network security for the competition and play-activity services. Online requests pass through Cloudflare and necessarily involve network information such as an IP address. Competition sign-in uses IP-based rate limiting to limit abuse. The application's competition and analytics databases do not store IP addresses. Cloudflare may process infrastructure information to provide its services under its own terms and privacy policy: https://www.cloudflare.com/privacypolicy/.
+
+Pole Position does not include advertising or use this information for cross-app advertising tracking. It does not include third-party analytics SDKs; the limited play-activity service described above is operated for the developer.
+
+On-device AI
+
+On supported iPhones, Race Engineer uses Apple's on-device Foundation Models to provide feedback based on app-calculated gameplay statistics. Pole Position does not send gameplay or coaching data to an external AI service. App-calculated coaching remains available when the on-device model is unavailable.
+
+Exports and backups
+
+You can choose to export results or back up and restore app data using the system file interface. Files are saved to the location you select. If you choose a cloud storage provider or share a file, that provider or recipient handles it under its own terms.
+
+Your choices
+
+You can play solo without Game Center, choose whether to enter online competitions, turn off Share Play Activity and control Race Engineer in Settings. Removing the app removes its local app data but does not necessarily remove exported files, information stored by Game Center or records already received by the competition and analytics services. Manage Game Center information through Apple's settings and services. Online records follow the retention details above.
+
+Contact
+
+For privacy questions or support, contact the developer through the public developer profile: https://github.com/FullChub.
